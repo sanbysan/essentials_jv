@@ -5,28 +5,28 @@
 		<title>Essential js</title>
 	</head>
 	<body>
-		<div id="wrapper">
+		<form id="wrapper" autocomplete="off">
 			<span>Bcakground color:</span>
-			<select id="background">
+			<select data-cssproperty="background">
 				<option value="Blue">Blue</option>
 				<option value="Red">Red</option>
 				<option value="Green">Green</option>
 			</select>
 			
 			<span>Width:</span>
-			<select id="width">
+			<select data-cssproperty="width">
 				<option value="100px">100px</option>
 				<option value="200px">200px</option>
 				<option value="300px">300px</option>
 			</select>
 			
 			<span>Height:</span>
-			<select id="height">
+			<select data-cssproperty="height">
 				<option value="100px">100px</option>
 				<option value="200px">200px</option>
 				<option value="300px">300px</option>
 			</select>
-		</div>
+		</form>
 		<br/><br/>
 		<div id="content" style="background:blue; width:100px; height:100px;"></div>
 		

@@ -1,7 +1,7 @@
 var element = document.getElementById('content');
 
 function dropdownStyles(select) {
-	var style = select.id;
+	var style = select.dataset.cssproperty;
 	var value = select.value;
 	element.style[style] = value;
 }
@@ -14,5 +14,6 @@ function onWrapperClick(event) {
 }
 
 var wrapper = document.getElementById("wrapper");
-wrapper.addEventListener('click', onWrapperClick);
+wrapper.addEventListener('change', onWrapperClick);
+
 
